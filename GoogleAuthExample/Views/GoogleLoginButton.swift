@@ -8,8 +8,8 @@
 import Foundation
 import UIKit
 
-final class Utilities {
-    static let shared = Utilities()
+final class GoogleLoginButton {
+    static let shared = GoogleLoginButton()
     private init() { }
     
     @MainActor

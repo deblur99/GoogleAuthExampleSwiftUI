@@ -20,8 +20,9 @@
 		618CAA332A834BD5005655A7 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 618CAA322A834BD5005655A7 /* FirebaseDatabaseSwift */; };
 		618CAA362A834D72005655A7 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 618CAA352A834D72005655A7 /* GoogleSignIn */; };
 		618CAA382A834D72005655A7 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 618CAA372A834D72005655A7 /* GoogleSignInSwift */; };
-		618CAA3E2A835650005655A7 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618CAA3D2A835650005655A7 /* Utility.swift */; };
+		618CAA3E2A835650005655A7 /* GoogleLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618CAA3D2A835650005655A7 /* GoogleLoginButton.swift */; };
 		618CAA402A8363A3005655A7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 618CAA3F2A8363A3005655A7 /* GoogleService-Info.plist */; };
+		618CAA442A83663C005655A7 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618CAA432A83663C005655A7 /* Authentication.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +54,9 @@
 		618CAA1A2A8349DB005655A7 /* GoogleAuthExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuthExampleUITests.swift; sourceTree = "<group>"; };
 		618CAA1C2A8349DB005655A7 /* GoogleAuthExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuthExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		618CAA3B2A834EED005655A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		618CAA3D2A835650005655A7 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		618CAA3D2A835650005655A7 /* GoogleLoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleLoginButton.swift; sourceTree = "<group>"; };
 		618CAA3F2A8363A3005655A7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		618CAA432A83663C005655A7 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +113,9 @@
 		618CA9FE2A8349D9005655A7 /* GoogleAuthExample */ = {
 			isa = PBXGroup;
 			children = (
+				618CAA422A83662A005655A7 /* Models */,
+				618CAA412A8365A3005655A7 /* Views */,
 				618CAA3F2A8363A3005655A7 /* GoogleService-Info.plist */,
-				618CAA3C2A835645005655A7 /* Utils */,
 				618CAA3B2A834EED005655A7 /* Info.plist */,
 				618CA9FF2A8349D9005655A7 /* GoogleAuthExampleApp.swift */,
 				618CAA012A8349D9005655A7 /* ContentView.swift */,
@@ -147,12 +150,20 @@
 			path = GoogleAuthExampleUITests;
 			sourceTree = "<group>";
 		};
-		618CAA3C2A835645005655A7 /* Utils */ = {
+		618CAA412A8365A3005655A7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				618CAA3D2A835650005655A7 /* Utility.swift */,
+				618CAA3D2A835650005655A7 /* GoogleLoginButton.swift */,
 			);
-			path = Utils;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		618CAA422A83662A005655A7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				618CAA432A83663C005655A7 /* Authentication.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,7 +311,8 @@
 			files = (
 				618CAA022A8349D9005655A7 /* ContentView.swift in Sources */,
 				618CAA002A8349D9005655A7 /* GoogleAuthExampleApp.swift in Sources */,
-				618CAA3E2A835650005655A7 /* Utility.swift in Sources */,
+				618CAA3E2A835650005655A7 /* GoogleLoginButton.swift in Sources */,
+				618CAA442A83663C005655A7 /* Authentication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
